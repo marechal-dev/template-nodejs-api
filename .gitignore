@@ -1,0 +1,20 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Database
+db/*.db
+prisma/migrations
+
+# Environment
+.env
+.env.test
+
+# Build folder
+build
+
+# Testing
+coverage
+
+# Misc.
+.vscode
