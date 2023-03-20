@@ -6,8 +6,10 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "strictNullChecks": true,
-    "skipLibCheck": true,
     "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
     "strictPropertyInitialization": false,
     "baseUrl": "./",
     "paths": {

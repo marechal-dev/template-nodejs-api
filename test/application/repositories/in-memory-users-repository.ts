@@ -1,5 +1,5 @@
 import { User } from '@/application/entities/User'
-import { UsersRepository } from '@/application/repositories/users-repository'
+import type { UsersRepository } from '@/application/repositories/users-repository'
 
 export class InMemoryUsersRepository implements UsersRepository {
   private readonly items: User[] = []
