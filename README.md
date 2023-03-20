@@ -8,7 +8,7 @@ Hi! My name is Pietro and this is a nice template I built for the sake of making
 - `reflect-metadata`
 - `dotenv`
 - `fastify`
-- `typedi`
+- `tsyringe`
 - `zod`
 - `@prisma/client` (includes `prisma`)
 - `bcryptjs`
