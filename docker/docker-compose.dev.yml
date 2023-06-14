@@ -1,0 +1,29 @@
+version: "3.8"
+
+volumes:
+  db_data:
+    driver: local
+
+services:
+  database:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=api
+    volumes:
+      - 'db_data:/bitnami/postgresql'
+
+  dev:
+    build:
+      context: ./dockerfiles
+      dockerfile: dev.Dockerfile
+    container_name: 'dev_api'
+    volumes:
+      - .:/usr/app
+    ports:
+      - 3333:3333
+    depends_on:
+      - database

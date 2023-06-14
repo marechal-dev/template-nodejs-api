@@ -1,23 +1,24 @@
 {
   "compilerOptions": {
+    "module": "CommonJS",
     "target": "ES2021",
-    "module": "commonjs",
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "strict": true,
-    "strictNullChecks": true,
     "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
     "noImplicitAny": true,
     "noImplicitOverride": true,
-    "skipLibCheck": true,
-    "strictPropertyInitialization": false,
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      // Your paths here!
     },
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
   }
 }

@@ -1,14 +1,14 @@
-import 'reflect-metadata'
+import 'reflect-metadata';
 
-import fastify from 'fastify'
+import fastify from 'fastify';
 
-import './shared/container'
+import './configs/container';
 
-import { applicationErrorHandler } from './shared/errors/application-error-handler'
-import { registerAppRoutes } from './infra/http/routes'
+import { globalHttpErrorHandler } from './globals/http/globalErrorHandler';
+import { registerAppRoutes } from './helpers/register-app-routes';
 
-export const app = fastify()
+export const app = fastify();
 
-registerAppRoutes(app)
+registerAppRoutes(app);
 
-app.setErrorHandler(applicationErrorHandler)
+app.setErrorHandler(globalHttpErrorHandler);
