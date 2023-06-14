@@ -1,9 +1,11 @@
 # Node.js RESTFul API Template
 
 Hi! My name is Pietro and this is a nice template I built for the sake of making Node.js API Development more efficient and typesafe.
-**This template uses TypeScript and PostgreSQL by default! But you can change to accomodate your needs :D**
+**This template uses TypeScript and PostgreSQL by default! But you can change to accomodate your needs 😄**
 
-## ⚙ Libs used
+## 📦 What is included?
+
+### ⚙ Libs
 
 - `reflect-metadata`
 - `dotenv`
@@ -25,14 +27,26 @@ Hi! My name is Pietro and this is a nice template I built for the sake of making
 
 All `@types` packages included!
 
-### 📝 ESLint Ruleset used
+### 🛠 Configs
 
-a
+- EditorConfig
+- ESLint
+- Docker & Docker Compose
+- GitHub Actions for _CI_
+- Dependabot
+
+### 📝 ESLint Rules
+
+See `.eslintrc.json` to customize the rules for your own flavor 😉
 
 ## 🚀 How to get up and running
 
+### Dev. Environment
+
 1. Setup your Environment Variables following the `.env.example` example file
-2. Run the `docker compose up` command
-3. Run the `prisma migrate dev` command:
-4. Run the `build` command:
-5. Run the `start:prod` command:
+2. Run the `docker compose up` command pointing to the correct `docker-compose.yml` file (`docker-compose.dev.yml`)
+
+### Prod. Environment
+
+1. Setup your Environment Variables following the `.env.example` example file
+2. Run the `docker compose up` command pointing to the correct `docker-compose.yml` file (`docker-compose.prod.yml`)

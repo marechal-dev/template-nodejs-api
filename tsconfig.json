@@ -16,9 +16,27 @@
     "noUnusedParameters": false,
     "noImplicitAny": true,
     "noImplicitOverride": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
-      // Your paths here!
+      // Examples of shorthand paths:
+      "@Core/*": [
+        "./src/core/*"
+      ],
+      "@Domain/*": [
+        "./src/domain/*"
+      ],
+      "@Application/*": [
+        "./src/application/*"
+      ],
+      "@Persistence/*": [
+        "./src/persistence/*"
+      ],
+      "@Infra/*": [
+        "./src/infra/*"
+      ],
+      "@Test/*": [
+        "./test/*"
+      ]
     },
   }
 }
